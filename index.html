@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Holistic Urban 3D Scene Understanding via Gaussian Splatting">
-  <meta name="keywords" content="holistic, urban, understanding, gaussian, reconstruction">
+        content="Unsupervised Instance Decomposition for Dynamic Urban Scene Reconstruction">
+  <meta name="keywords" content="unsupervised, urban, understanding, gaussian, reconstruction">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HUGS: Holistic Urban 3D Scene Understanding via Gaussian Splatting</title>
+  <title>UnIRe: Unsupervised Instance Decomposition for Dynamic Urban Scene Reconstruction</title>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1FWSVCGZTG"></script>
@@ -31,6 +31,8 @@
   <link rel="stylesheet" href="./css/bulma-slider.min.css">
   <link rel="stylesheet" href="./css/twentytwenty.css">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="icon" href="./images/favicon.svg">
 
   <script src="./js/jquery-3.2.1.min.js"></script>
@@ -61,66 +63,43 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">HUGS: Holistic Urban 3D Scene Understanding via Gaussian Splatting</h1>
-          <h3 class="title has-text-centered">CVPR 2024</h3>
+          <h1 class="title is-1 publication-title">UnIRe: Unsupervised Instance Decomposition for Dynamic Urban Scene Reconstruction</h1>
+          <!-- <h3 class="title has-text-centered">CVPR 2024</h3> -->
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://github.com/hyzhou404" target="_blank" rel="noopener noreferrer">
-                Hongyu Zhou</a><sup>1</sup>,
+              <a href="https://yunxuanmao.github.io/" target="_blank" rel="noopener noreferrer">
+                Yunxuan Mao</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://jiahao-shao1.github.io/" target="_blank" rel="noopener noreferrer">
-                Jiahao Shao</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="" target="_blank" rel="noopener noreferrer">
-                Lu Xu</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="" target="_blank" rel="noopener noreferrer">
-                Dongfeng Bai</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://weichaoqiu.com/" target="_blank" rel="noopener noreferrer">
-                Weichao Qiu</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="" target="_blank" rel="noopener noreferrer">
-                Bingbing Liu</a><sup>2</sup>,
+              <a href="https://person.zju.edu.cn/en/rongxiong" target="_blank" rel="noopener noreferrer">
+                Rong Xiong</a><sup>1</sup>,
             </span>
             <span class="author-block">
               <a href="https://ywang-zju.github.io/" target="_blank" rel="noopener noreferrer">
                 Yue Wang</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.cvlibs.net/" target="_blank" rel="noopener noreferrer">
-                Andreas Geiger</a><sup>3,4</sup>,
-            </span>
-            <span class="author-block">
               <a href="https://yiyiliao.github.io/" target="_blank" rel="noopener noreferrer">
-                Yiyi Liao</a><sup>1</sup>,
+                Yiyi Liao</a><sup>1</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Zhejiang University,</span>
-            <span class="author-block"><sup>2</sup>Huawei Noah's Ark Lab,</span>
-            <span class="author-block"><sup>3</sup>University of Tübingen,</span>
-            <span class="author-block"><sup>4</sup>Tübingen AI Center</span>
+            <span class="author-block"><sup>1</sup>Zhejiang University</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- <span class="link-block">
-                <a href="https://arxiv.org/abs/2403.12722" target="_blank" rel="noopener noreferrer"
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948" target="_blank" rel="noopener noreferrer"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv" style="color: orangered"></i>
                   </span>
-                  <span>Arxiv</span>
+                  <span>arXiv</span>
                 </a>
-              </span> -->
-              <span class="link-block">
+              </span>
+              <!-- <span class="link-block">
                 <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Zhou_HUGS_Holistic_Urban_3D_Scene_Understanding_via_Gaussian_Splatting_CVPR_2024_paper.html" target="_blank" rel="noopener noreferrer"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -128,15 +107,15 @@
                   </span>
                   <span>Paper</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/hyzhou404/HUGS" target="_blank" rel="noopener noreferrer"
+                <a href="javascript:void(0)" target="_blank" rel="noopener noreferrer"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (Coming Soon)</span>
                 </a>
               </span>
             </div>
@@ -162,35 +141,31 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Overview</h2>
-        <img id="teaser" width="100%" src="./images/teaser2_compressed.jpg" alt="Teaser image demonstrating Marigold depth estimation."/>
+        <h2 class="title is-3">Abstract</h2>
+        <img id="teaser" width="100%" src="./images/teaser.png" alt="Teaser image demonstrating Marigold depth estimation."/>
         <div class="content has-text-justified">
           <p>
-            We present <span class="methodname">HUGS</span>, a novel pipeline that utilizes 3D Gaussian Splatting for holistic urban scene understanding. 
-            Our main idea involves the joint optimization of geometry, appearance, semantics, and motion using a combination of static and dynamic 3D Gaussians, 
-            where moving object poses are regularized via physical constraints. Our approach offers the ability to render new viewpoints in real-time, yielding 
-            2D and 3D semantic information with high accuracy, and reconstruct dynamic scenes, even in scenarios where 3D bounding box detection are highly noisy.
+            Reconstructing and decomposing dynamic urban scenes is crucial for autonomous driving, urban planning, and scene editing. However, existing methods fail to perform instance-aware decomposition without manual annotations, which is crucial for instance-level scene editing.
+          </p>
+          <p>
+            We propose <span class="methodname">UnIRe</span>, a 3D Gaussian Splatting (3DGS) based approach that decomposes a scene into a static background and individual dynamic instances using only RGB images and LiDAR point clouds. At its core, we introduce 4D superpoints, a novel representation that clusters multi-frame LiDAR points in 4D space, enabling unsupervised instance separation based on spatiotemporal correlations. These 4D superpoints serve as the foundation for our decomposed 4D initialization, i.e., providing spatial and temporal initialization to train a dynamic 3DGS for arbitrary dynamic classes without requiring bounding boxes or object templates.
+            Furthermore, we introduce a smoothness regularization strategy in both 2D and 3D space, further improving the temporal stability.
+            Experiments on benchmark datasets show that our method outperforms existing methods in decomposed dynamic scene reconstruction while enabling accurate and flexible instance-level editing, making it a practical solution for real-world applications.
           </p>
         </div>
-        <!-- <div class="content has-text-justified">
-          <p>
-            The gallery below presents the holistic urban scene understanding results of <span class="methodname">HUGS</span> on the open autonomous driving dataset.
-            Use the slider and gestures to reveal details on both sides.
-          </p>
-        </div> -->
       </div>
     </div>
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/DmPhL-8FeT4?si=IrJkk4bGNQhuQKVK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Paper video. -->
 
   </div>
@@ -198,78 +173,88 @@
 
 
 <h3 class="title has-text-centered">
-  Comparison with NSG & MARS based on Noisy BBOX
+  Comparison with Baselines and GroundTruth (Novel View Synthesis)
 </h3>
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel-vertical" class="carousel results-carousel">
 
-        <div class="fouritem">
+        <div class="threeitem">
           <div class="twentytwenty-container twentytwenty-container-top11">
             <div class="cmpcontent">
-              <img src="./images/baseline/kitti02/ours.png">
+              <img src="./images/baseline/waymo23/ours.png">
             </div>
             <div class="cmpcontent">
-              <img src="./images/baseline/kitti02/nsg.png">
+              <img src="./images/baseline/waymo23/desire.png">
             </div>
           </div>
           <div class="twentytwenty-container twentytwenty-container-top21">
             <div class="cmpcontent">
-              <img src="./images/baseline/kitti06/ours.png">
+              <img src="./images/baseline/waymo172/ours.png">
             </div>
             <div class="cmpcontent">
-              <img src="./images/baseline/kitti06/nsg.png">
+              <img src="./images/baseline/waymo172/desire.png">
             </div>
           </div>
           <div class="twentytwenty-container twentytwenty-container-top31">
             <div class="cmpcontent">
-              <img src="./images/baseline/vkitti02/ours.png">
+              <img src="./images/baseline/waymo327/ours.png">
             </div>
             <div class="cmpcontent">
-              <img src="./images/baseline/vkitti02/nsg.png">
-            </div>
-          </div>
-          <div class="twentytwenty-container twentytwenty-container-top41">
-            <div class="cmpcontent">
-              <img src="./images/baseline/vkitti06/ours.png">
-            </div>
-            <div class="cmpcontent">
-              <img src="./images/baseline/vkitti06/nsg.png">
+              <img src="./images/baseline/waymo327/desire.png">
             </div>
           </div>
         </div>
-        <div class="fouritem">
+        <div class="threeitem">
           <div class="twentytwenty-container twentytwenty-container-top12">
             <div class="cmpcontent">
-              <img src="./images/baseline/kitti02/ours.png">
+              <img src="./images/baseline/waymo23/ours.png">
             </div>
             <div class="cmpcontent">
-              <img src="./images/baseline/kitti02/mars.png">
+              <img src="./images/baseline/waymo23/omnire.png">
             </div>
           </div>
           <div class="twentytwenty-container twentytwenty-container-top22">
             <div class="cmpcontent">
-              <img src="./images/baseline/kitti06/ours.png">
+              <img src="./images/baseline/waymo172/ours.png">
             </div>
             <div class="cmpcontent">
-              <img src="./images/baseline/kitti06/mars.png">
+              <img src="./images/baseline/waymo172/omnire.png">
             </div>
           </div>
           <div class="twentytwenty-container twentytwenty-container-top32">
             <div class="cmpcontent">
-              <img src="./images/baseline/vkitti02/ours.png">
+              <img src="./images/baseline/waymo327/ours.png">
             </div>
             <div class="cmpcontent">
-              <img src="./images/baseline/vkitti02/mars.png">
+              <img src="./images/baseline/waymo327/omnire.png">
             </div>
           </div>
-          <div class="twentytwenty-container twentytwenty-container-top42">
+        </div>
+        <div class="threeitem">
+          <div class="twentytwenty-container twentytwenty-container-top13">
             <div class="cmpcontent">
-              <img src="./images/baseline/vkitti06/ours.png">
+              <img src="./images/baseline/waymo23/ours.png">
             </div>
             <div class="cmpcontent">
-              <img src="./images/baseline/vkitti06/mars.png">
+              <img src="./images/baseline/waymo23/gt.png">
+            </div>
+          </div>
+          <div class="twentytwenty-container twentytwenty-container-top23">
+            <div class="cmpcontent">
+              <img src="./images/baseline/waymo172/ours.png">
+            </div>
+            <div class="cmpcontent">
+              <img src="./images/baseline/waymo172/gt.png">
+            </div>
+          </div>
+          <div class="twentytwenty-container twentytwenty-container-top33">
+            <div class="cmpcontent">
+              <img src="./images/baseline/waymo327/ours.png">
+            </div>
+            <div class="cmpcontent">
+              <img src="./images/baseline/waymo327/gt.png">
             </div>
           </div>
         </div>
@@ -289,59 +274,93 @@
     });
 
     bulmaCarousel.attach('#results-carousel-vertical', {
-      slidesToScroll: 2,
-      slidesToShow: 2,
-      loop: true,
-      autoplay: true,
-    });
-
-    bulmaCarousel.attach('#results-carousel-vertical2', {
       slidesToScroll: 1,
       slidesToShow: 3,
       loop: true,
       autoplay: true,
     });
 
+    bulmaCarousel.attach('#results-carousel-vertical2', {
+      slidesToScroll: 1,
+      slidesToShow: 1,
+      loop: true,
+      autoplay: true,
+    });
+    bulmaCarousel.attach('#results-carousel-vertical3', {
+      slidesToScroll: 3,
+      slidesToShow: 3,
+      loop: true,
+      autoplay: true,
+    });
+
+    
+
     $(".twentytwenty-container-top11").twentytwenty({
       before_label: 'Ours',
-      after_label: 'NSG',
+      after_label: 'DeSiRe-GS',
       default_offset_pct: 0.75,
     });
     $(".twentytwenty-container-top21").twentytwenty({
       before_label: 'Ours',
-      after_label: 'NSG',
-      default_offset_pct: 0.75,
-    });
-    $(".twentytwenty-container-top12").twentytwenty({
-      before_label: 'Ours',
-      after_label: 'MARS',
-      default_offset_pct: 0.75,
-    });
-    $(".twentytwenty-container-top22").twentytwenty({
-      before_label: 'Ours',
-      after_label: 'MARS',
+      after_label: 'DeSiRe-GS',
       default_offset_pct: 0.75,
     });
     $(".twentytwenty-container-top31").twentytwenty({
       before_label: 'Ours',
-      after_label: 'NSG',
+      after_label: 'DeSiRe-GS',
+      default_offset_pct: 0.75,
+    });
+
+    $(".twentytwenty-container-top12").twentytwenty({
+      before_label: 'Ours',
+      after_label: 'OmniRe*',
+      default_offset_pct: 0.75,
+    });
+    $(".twentytwenty-container-top22").twentytwenty({
+      before_label: 'Ours',
+      after_label: 'OmniRe*',
       default_offset_pct: 0.75,
     });
     $(".twentytwenty-container-top32").twentytwenty({
       before_label: 'Ours',
-      after_label: 'MARS',
+      after_label: 'OmniRe*',
       default_offset_pct: 0.75,
     });
-    $(".twentytwenty-container-top41").twentytwenty({
+
+    $(".twentytwenty-container-top13").twentytwenty({
       before_label: 'Ours',
-      after_label: 'NSG',
+      after_label: 'GT',
       default_offset_pct: 0.75,
     });
-    $(".twentytwenty-container-top42").twentytwenty({
+    $(".twentytwenty-container-top23").twentytwenty({
       before_label: 'Ours',
-      after_label: 'MARS',
+      after_label: 'GT',
       default_offset_pct: 0.75,
     });
+    $(".twentytwenty-container-top33").twentytwenty({
+      before_label: 'Ours',
+      after_label: 'GT',
+      default_offset_pct: 0.75,
+    });
+
+    $(".twentytwenty-container-top1").twentytwenty({
+      before_label: 'Ins',
+      after_label: 'GT',
+      default_offset_pct: 0.75,
+    });
+
+    $(".twentytwenty-container-top2").twentytwenty({
+      before_label: 'Ins',
+      after_label: 'GT',
+      default_offset_pct: 0.75,
+    });
+
+    $(".twentytwenty-container-top3").twentytwenty({
+      before_label: 'Ins',
+      after_label: 'GT',
+      default_offset_pct: 0.75,
+    });
+
   });
 </script>
 
@@ -354,16 +373,107 @@
         <div class="content has-text-justified">
 
           <p>
-            Our algorithm takes as input posed images of a dynamic urban scene. We decompose the scene into static and dynamic 3D Gaussians,
-             with the motion of dynamic vehicles being modeled via a unicycle model. The 3D Gaussians represent not only appearance but 
-             also semantic and flow information, allowing for rendering the RGB images, semantic labels, as well as optical flow through volume rendering.
+            Our method consists of two core components: 4D SuperPoint-Based Initialization and Dynamic Scene Representation. 
+            4D SuperPoint-Based Initialization takes LiDAR points as input and estimates scene flow using a self-supervised optimization method. 
+            Then, 4D SuperPoint Generation and 4D SuperPoint Clustering decompose the scene into a static background and dynamic instances. 
+            The dynamic instances are further used to construct a canonical space and per-point deformation $\{d_i\}_1^t$. 
+            Dynamic Scene Representation utilizes the static background to initialize the static layer, while the canonical space and per-point deformation serve as the initialization for the dynamic layer. 
+            The model is supervised by ground truth images and depth maps projected from LiDAR points.
           </p>
 
-          <img id="method" width="100%" src="./images/method_v3.png" alt="Marigold training scheme"/>
+          <img id="method" width="100%" src="./images/method.png" alt="Marigold training scheme"/>
         </div>
       </div>
     </div>
     <!--/ Method. -->
+  </div>
+</section>
+
+<h3 class="title has-text-centered">
+  Applications
+</h3>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h4 class="title has-text-centered">
+        Dynamic Instance Decomposition
+      </h4>
+      <div id="results-carousel-vertical" class="carousel results-carousel">
+
+        <div class="oneitem">
+          <div class="twentytwenty-container twentytwenty-container-top1">
+            <div class="cmpcontent">
+              <img src="./images/baseline/waymo23/ours.png">
+            </div>
+            <div class="cmpcontent">
+              <img src="./images/baseline/waymo23/desire.png">
+            </div>
+          </div>
+        </div>
+        <div class="oneitem">
+          <div class="twentytwenty-container twentytwenty-container-top2">
+            <div class="cmpcontent">
+              <img src="./images/baseline/waymo172/ours.png">
+            </div>
+            <div class="cmpcontent">
+              <img src="./images/baseline/waymo172/desire.png">
+            </div>
+          </div>
+        </div>
+        <div class="oneitem">
+          <div class="twentytwenty-container twentytwenty-container-top3">
+            <div class="cmpcontent">
+              <img src="./images/baseline/waymo327/ours.png">
+            </div>
+            <div class="cmpcontent">
+              <img src="./images/baseline/waymo327/desire.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <h4 class="title has-text-centered">
+        Scene Editing
+      </h4>
+      <div id="results-carousel-vertical3" class="carousel results-carousel">
+        <div class="cmpcontent">
+          <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
+            <source src="./video/edit/23/gt.mp4">
+          </video>
+          <p class="caption has-text-centered">Origin</p>
+        </div>
+        <div class="cmpcontent">
+          <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
+            <source src="./video/edit/23/render.mp4">
+          </video>
+          <p class="caption has-text-centered">Rendering</p>
+        </div>
+        <div class="cmpcontent">
+          <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
+            <source src="./video/edit/23/editted.mp4">
+          </video>
+          <p class="caption has-text-centered">Insert a man</p>
+        </div>
+        <div class="cmpcontent">
+          <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
+            <source src="./video/edit/788/gt.mp4">
+          </video>
+          <p class="caption has-text-centered">Origin</p>
+        </div>
+        <div class="cmpcontent">
+          <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
+            <source src="./video/edit/788/render.mp4">
+          </video>
+          <p class="caption has-text-centered">Rendering</p>
+        </div>
+        <div class="cmpcontent">
+          <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
+            <source src="./video/edit/788/editted.mp4">
+          </video>
+          <p class="caption has-text-centered">Replace a man</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -377,42 +487,48 @@
       <div id="results-carousel-vertical2" class="carousel results-carousel">
           <div class="cmpcontent">
             <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
-              <source src="./video/waymo/104481.mp4"
+              <source src="./video/waymo/23.mp4"
                       type="video/mp4">
             </video>
           </div>
 
           <div class="cmpcontent">
             <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
-              <source src="./video/waymo/176124.mp4"
+              <source src="./video/waymo/172.mp4"
                       type="video/mp4">
             </video>
           </div>
 
           <div class="cmpcontent">
             <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
-              <source src="./video/waymo/190611.mp4"
+              <source src="./video/waymo/327.mp4"
                       type="video/mp4">
             </video>
           </div>
 
           <div class="cmpcontent">
             <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
-              <source src="./video/waymo/209468.mp4"
+              <source src="./video/waymo/552.mp4"
                       type="video/mp4">
             </video>
           </div>
           
           <div class="cmpcontent">
             <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
-              <source src="./video/waymo/424653.mp4"
+              <source src="./video/waymo/621.mp4"
                       type="video/mp4">
             </video>
           </div>
 
+          <!-- <div class="cmpcontent">
+            <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
+              <source src="./video/waymo/703.mp4"
+                      type="video/mp4">
+            </video>
+          </div> -->
           <div class="cmpcontent">
             <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
-              <source src="./video/waymo/839851.mp4"
+              <source src="./video/waymo/788.mp4"
                       type="video/mp4">
             </video>
           </div>
@@ -421,7 +537,7 @@
   </div>
 </section>
 
-<section class="section" id="BibTeX">
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@InProceedings{Zhou_2024_CVPR,
@@ -433,7 +549,7 @@
       pages     = {21336-21345}
   }</code></pre>
   </div>
-</section>
+</section> -->
 
 <footer class="footer pt-4 pb-0">
   <div class="container">
