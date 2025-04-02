@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="icon" href="./images/favicon.svg">
+  <link rel="icon" href="./images/android-chrome-512x512.png">
 
   <script src="./js/jquery-3.2.1.min.js"></script>
   <script src="./js/jquery.event.move.js"></script>
@@ -91,7 +91,7 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948" target="_blank" rel="noopener noreferrer"
+                <a href="https://arxiv.org/abs/2504.00763" target="_blank" rel="noopener noreferrer"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv" style="color: orangered"></i>
@@ -364,39 +364,14 @@
   });
 </script>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Method. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">How it works</h2>
-        <div class="content has-text-justified">
-
-          <p>
-            Our method consists of two core components: 4D SuperPoint-Based Initialization and Dynamic Scene Representation. 
-            4D SuperPoint-Based Initialization takes LiDAR points as input and estimates scene flow using a self-supervised optimization method. 
-            Then, 4D SuperPoint Generation and 4D SuperPoint Clustering decompose the scene into a static background and dynamic instances. 
-            The dynamic instances are further used to construct a canonical space and per-point deformation $\{d_i\}_1^t$. 
-            Dynamic Scene Representation utilizes the static background to initialize the static layer, while the canonical space and per-point deformation serve as the initialization for the dynamic layer. 
-            The model is supervised by ground truth images and depth maps projected from LiDAR points.
-          </p>
-
-          <img id="method" width="100%" src="./images/method.png" alt="Marigold training scheme"/>
-        </div>
-      </div>
-    </div>
-    <!--/ Method. -->
-  </div>
-</section>
-
 <h3 class="title has-text-centered">
-  Applications
+  Applications (Scene Editing)
 </h3>
 
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
-      <h4 class="title has-text-centered">
+      <!-- <h4 class="title has-text-centered">
         Dynamic Instance Decomposition
       </h4>
       <div id="results-carousel-vertical" class="carousel results-carousel">
@@ -431,29 +406,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <h4 class="title has-text-centered">
-        Scene Editing
-      </h4>
+      </div> -->
       <div id="results-carousel-vertical3" class="carousel results-carousel">
-        <div class="cmpcontent">
-          <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
-            <source src="./video/edit/23/gt.mp4">
-          </video>
-          <p class="caption has-text-centered">Origin</p>
-        </div>
-        <div class="cmpcontent">
-          <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
-            <source src="./video/edit/23/render.mp4">
-          </video>
-          <p class="caption has-text-centered">Rendering</p>
-        </div>
-        <div class="cmpcontent">
-          <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
-            <source src="./video/edit/23/editted.mp4">
-          </video>
-          <p class="caption has-text-centered">Insert a man</p>
-        </div>
         <div class="cmpcontent">
           <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
             <source src="./video/edit/788/gt.mp4">
@@ -472,10 +426,56 @@
           </video>
           <p class="caption has-text-centered">Replace a man</p>
         </div>
+        <div class="cmpcontent">
+          <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
+            <source src="./video/edit/23/gt.mp4">
+          </video>
+          <p class="caption has-text-centered">Origin</p>
+        </div>
+        <div class="cmpcontent">
+          <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
+            <source src="./video/edit/23/render.mp4">
+          </video>
+          <p class="caption has-text-centered">Rendering</p>
+        </div>
+        <div class="cmpcontent">
+          <video poster="" id="steve" autoplay controls muted loop playsinline width="100%">
+            <source src="./video/edit/23/editted.mp4">
+          </video>
+          <p class="caption has-text-centered">Insert a man</p>
+        </div>
+        
       </div>
     </div>
   </div>
 </section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Method. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">How it works</h2>
+        <div class="content has-text-justified">
+
+          <p>
+            Our method consists of two core components: 4D SuperPoint-Based Initialization and Dynamic Scene Representation. 
+            4D SuperPoint-Based Initialization takes LiDAR points as input and estimates scene flow using a self-supervised optimization method. 
+            Then, 4D SuperPoint Generation and 4D SuperPoint Clustering decompose the scene into a static background and dynamic instances. 
+            The dynamic instances are further used to construct a canonical space and per-point deformation $\{d_i\}_1^t$. 
+            Dynamic Scene Representation utilizes the static background to initialize the static layer, while the canonical space and per-point deformation serve as the initialization for the dynamic layer. 
+            The model is supervised by ground truth images and depth maps projected from LiDAR points.
+          </p>
+
+          <img id="method" width="100%" src="./images/method.png" alt="Marigold training scheme"/>
+        </div>
+      </div>
+    </div>
+    <!--/ Method. -->
+  </div>
+</section>
+
+
 
 <br>
 <h3 class="title has-text-centered">
@@ -537,19 +537,20 @@
   </div>
 </section>
 
-<!-- <section class="section" id="BibTeX">
+<section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@InProceedings{Zhou_2024_CVPR,
-      author    = {Zhou, Hongyu and Shao, Jiahao and Xu, Lu and Bai, Dongfeng and Qiu, Weichao and Liu, Bingbing and Wang, Yue and Geiger, Andreas and Liao, Yiyi},
-      title     = {HUGS: Holistic Urban 3D Scene Understanding via Gaussian Splatting},
-      booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-      month     = {June},
-      year      = {2024},
-      pages     = {21336-21345}
-  }</code></pre>
+    <pre><code>@misc{mao2025unire,
+      title={UnIRe: Unsupervised Instance Decomposition for Dynamic Urban Scene Reconstruction}, 
+      author={Yunxuan Mao and Rong Xiong and Yue Wang and Yiyi Liao},
+      year={2025},
+      eprint={2504.00763},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2504.00763}, 
+}</code></pre>
   </div>
-</section> -->
+</section>
 
 <footer class="footer pt-4 pb-0">
   <div class="container">
